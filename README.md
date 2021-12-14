@@ -41,14 +41,14 @@ Due to the high amound of randomness that is inherent within the Gin Rummy Envir
 
 ### Simulation 1 Results
 
-| DQN Model Runs | DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
+| DQN Model | DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- | --- |
 | Sample Run 1 | img  | img  | img | %  | 
 | Sample Run 2  | img | img  | img | %  | 
 
 ### Simulation 2 Results
 
-| DDQN Model Runs | DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
+| DDQN Model | DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- | --- |
 | Sample Run 1 | img  | img  | img | %  | 
 | Sample Run 2  | img | img  | img | %  | 
@@ -58,7 +58,7 @@ Due to the high amound of randomness that is inherent within the Gin Rummy Envir
 In total, I ran the each simulation 10 times. 
 
 The key observations I understood were that:
-- The average reward of the DQN Model was very variable, <br/> However, regardless of the average reward, the DQN did win the majority of games playing against Random Moves.
+- The average reward of the DQN Model was very variable, <br/> However, regardless of the average reward, the DQN won the majority of games playing against Random Moves.
 - The DDQN Model, which accounts for the next state action, performs worse than a normal DQN Model consistently when looking at Model Reward and winning percentage.
 
 ### Understanding Observations
