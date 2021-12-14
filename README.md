@@ -4,8 +4,8 @@
 
 ### Definitions
 
-Model Score: Reward of the Model
-Model Reward: (Model Score - Random Move Score)
+- Model Score: Reward of the Model
+- Model Reward: (Model Score - Random Move Score)
 
 ## Evaluation
 
@@ -41,4 +41,4 @@ Due to the high amound of randomness that is inherent within the Gin Rummy Envir
 In total, I ran the each simulation around 10 times. 
 
 The key observations I understood were that:
-- The average reward of the DQN Model was very variable, however, regardless of the average reward the DQN did win the majority of games against a player making Random Moves.
+- The average reward of the DQN Model was very variable, <br/> However, regardless of the average reward, the DQN did win the majority of games playing against Random Moves.
