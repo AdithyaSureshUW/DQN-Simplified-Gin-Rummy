@@ -49,23 +49,23 @@ In total, I ran the each simulation 15 times, and I have shown a sample plot for
 
 | DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- |
-| img  | img  | img | 52%  | 
-| img  | img  | img | 55%  | 
-| img  | img  | img | 62%  | 
+| ![](/plots/plots_DQN/dqn_run1_net_rewards.png) | ![](/plots/plots_DQN/dqn_run1_score.png) | ![](/plots/plots_DQN/dqn_run1_losses.png) | 52%  | 
+| ![](/plots/plots_DQN/dqn_run2_net_rewards.png) | ![](/plots/plots_DQN/dqn_run2_score.png) | ![](/plots/plots_DQN/dqn_run2_losses.png) | 55%  | 
+| ![](/plots/plots_DQN/dqn_run3_net_rewards.png) | ![](/plots/plots_DQN/dqn_run3_score.png) | ![](/plots/plots_DQN/dqn_run3_losses.png) | 62%  | 
 
 ### Simulation 2 Evaluation
 
 | DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- |
-| img  | img  | img | 58%  | 
-| img  | img  | img | 53%  | 
-| img  | img  | img | 51%  | 
+| ![](/plots/plots_DDQN/ddqn_run1_net_rewards.png) | ![](/plots/plots_DDQN/ddqn_run1_score.png) | ![](/plots/plots_DDQN/ddqn_run1_losses.png) | 58%  | 
+| ![](/plots/plots_DDQN/ddqn_run2_net_rewards.png) | ![](/plots/plots_DDQN/ddqn_run2_score.png) | ![](/plots/plots_DDQN/ddqn_run2_losses.png) | 53%  | 
+| ![](/plots/plots_DDQN/ddqn_run3_net_rewards.png) | ![](/plots/plots_DDQN/ddqn_run3_score.png) | ![](/plots/plots_DDQN/ddqn_run3_losses.png) | 51%  | 
 
 ## Results
 
 ### DQN Model Results
 
-The DQN Model results are hard to quantify as the learning done by the model was not seen in the evaluation, but the DQN Model did have winning record over the course of 100 episodes consistenly over the majority the simulations. Furthermore, the individual model score of the DQN Model sometimes showed an upward trend as more episodes passes, but also sometimes showed a downward trend. This makes it hard to infer if the model was really learning as intended , which could indicate that it was learning how to maximize the reward of the player, even without having full gamestate knowledge.
+The DQN Model results are hard to quantify as the learning done by the model was not seen in the evaluation, but the DQN Model did have winning record over the course of 100 episodes consistenly over the majority the simulations. Furthermore, the individual model score of the DQN Model sometimes showed an upward trend as more episodes passes, but also sometimes showed a downward trend. This makes it hard to infer if the model was really learning as intended. The DQN Model did consistently have very high winning percentages over the Random Move agent, but the lack of consistency of the model makes it hard to answer the problem with.
 
 ### DDQN Model Results
 
@@ -74,6 +74,8 @@ Unlike the DQN Model, the DDQN Model showed both a trend in learning how to maxi
 ### Result Summary
 
 After revewing the evaluation data, I believe that looking at the Model Score Trend Line was is the best evaluation metric to use to verify how well a model is training because a Model's Net Reward and Win Percentage are are influenced by the Random Move agent. Thus, I believe that as a DQN model would not work consistently for the simplified Gin Rummy environment, while the DDQN model shows that it could produce consistently better results given more training time.
+
+Thus, I do believe that Deep Q-Learning can be applied to environments, such as the simplified Gin Rummy environment, where players do not have knowledge of the entire gamestate.
 
 ## Future Improvements
 
