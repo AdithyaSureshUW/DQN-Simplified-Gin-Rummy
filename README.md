@@ -14,9 +14,20 @@ The problem this project aims to solve to is to understand if a Deep Q-Learning 
 
 ## Related Work
 
+### References
+
+- https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf
+- http://people.csail.mit.edu/hongzi/content/publications/DeepRM-HotNets16.pdf
+
 ### Pre-Existing Work
 
+My work was influenced by Maxwell De Jong's DQN work, https://maxwelldejong.com/data_science/lost_cities/, as well as one of the major sources of the De Jong's work, Jaromir Janisch's DQN work, https://jaromiru.com/2016/10/21/lets-make-a-dqn-full-dqn/. 
+
+Specifically, I took inspiration of the idea to apply a DQN to a card game with players not knowing all aspects of the gamestate. Then, I utilized Janisch's explaination alongside the article sources mentioned above to get a grasp on what Deep Q-Learning and Deep Q-Networks worked and coded. I used Janisch's DQN and DDQN Model code as a basis for the work I did on this project.
+
 ### Modifications Made to Pre-Existing Work
+
+The first major change I made to the pre-existing work was creating the entire simplified Gin Rummy environment from scratch. When creating this environment, I had to understand the rules I wanted to implement for the simplified version of Gin Rummy, how much a state should be scored, the possible moves from a specific gamestate, how to update the environment given an action to take, etc. Next, after developing and tested the Gin Rummy environment, I had to modify the Brain model to adapt to the environment I built. To do this, I made sure to perform a manual hyperparameter search to get good parameters for the model as well as try out various model architecture to verify which would work the best with the Gin Rummy environment. Furthermore, I had to make modifications to the basis code for the DQNs in order to match how the environment stored different variables. Also, I had to make sure to create a function that would properly represent player's state rather than the gamestate so the DQN could use the proper information when bring trained and evaluated.
 
 ## Methodology
 
@@ -45,7 +56,7 @@ Due to the high amound of randomness that is inherent within the Gin Rummy Envir
 
 In total, I ran the each simulation 15 times, and I have shown a sample plot for each simulation.
 
-### Simulation 1 Evaluation
+### DQN Simulation Evaluation
 
 | DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- |
@@ -53,7 +64,7 @@ In total, I ran the each simulation 15 times, and I have shown a sample plot for
 | ![](/plots/plots_DQN/dqn_run2_net_rewards.png) | ![](/plots/plots_DQN/dqn_run2_score.png) | ![](/plots/plots_DQN/dqn_run2_losses.png) | 55%  | 
 | ![](/plots/plots_DQN/dqn_run3_net_rewards.png) | ![](/plots/plots_DQN/dqn_run3_score.png) | ![](/plots/plots_DQN/dqn_run3_losses.png) | 62%  | 
 
-### Simulation 2 Evaluation
+### DDQN Simulation 2 Evaluation
 
 | DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- |
