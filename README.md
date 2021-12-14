@@ -23,7 +23,7 @@ The problem this project aims to solve to is to understand if a Deep Q-Learning 
 
 My work was influenced by Maxwell De Jong's DQN work, https://maxwelldejong.com/data_science/lost_cities/, as well as one of the major sources of the De Jong's work, Jaromir Janisch's DQN work, https://jaromiru.com/2016/10/21/lets-make-a-dqn-full-dqn/. 
 
-Specifically, I took inspiration of the idea to apply a DQN to a card game with players not knowing all aspects of the gamestate. Then, I utilized Janisch's explaination alongside the article sources mentioned above to get a grasp on what Deep Q-Learning and Deep Q-Networks worked and coded. I used Janisch's DQN and DDQN Model code as a basis for the work I did on this project.
+Specifically, I took inspiration of the idea to apply a DQN to a card game with players not knowing all aspects of the gamestate. Then, I utilized Janisch's explaination alongside the article sources mentioned above to get a grasp on how Deep Q-Learning and Deep Q-Networks worked and were coded. I used Janisch's DQN and DDQN Model code as a basis for the work I did on this project.
 
 ### Modifications Made to Pre-Existing Work
 
