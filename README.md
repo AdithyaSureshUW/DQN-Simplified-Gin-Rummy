@@ -53,15 +53,9 @@ In total, I ran the each simulation 10 times, and I have shown a sample plot for
 
 ## Results
 
-### DQN Results
+Overall, the DQN Model did show that it learned as it was trained on more scenarios and performed adequately. The DQN Model was able to have a winning record over the course of 100 episodes consistenly over all the simulations. Furthermore, the individual model score of the DQN Model did show an upward trend as more episodes passes, which could indicate that it was learning how to maximize the reward of the player, even without having full gamestate knowledge. Similar to the DQN Model, the DDQN Model also showed a trend in learning how to maximize the reward of the player and winning record. Commpared to the DQN Model, the DDQN tends to be more stable in the rewards it provides and has less peaks compared to the DQN Model. 
 
-Overall, the DQN Model did show that the model learned as it was trained on more scenarios and performed adequately. The DQN Model was able to have a winning record over the course of 100 episodes consistenly over all the simulations. Furthermore, the individual model score of the DQN Model did show an upward trend as more episodes passes, which could indicate that it was learning how to maximize the reward of the player, even without having full gamestate knowledge.
-
-### DDQN Results
-
-The DDQN Model similarly showed some trend in learning how to maximize the record of the player and winning record.
-
-### Understanding Results
+One key note to add onto the evaluation is that in other simulations, both models had cases where their Model Score trend line went down. Furthremore, in most cases the net reward gained for each model still fluxuated greatly and showed no real trend. Thus, I found it very interesting that, regardless of the lack of trend in Net Reward and not having a guarenteed positive Model Score trend, the models consistently showed having a winning record.
 
 ## Future Improvements
 
