@@ -53,10 +53,6 @@ In total, I ran the each simulation 10 times, and I have shown a sample plot for
 
 ## Results
 
-Two key observations I found through the simulations were that:
-- The average reward of the DQN Model was very variable, <br/> However, regardless of the average reward, the DQN won the majority of games playing against Random Moves.
-- The DDQN Model, which accounts for the next state action, performs worse than a normal DQN Model consistently when looking at Model Reward and winning percentage.
-
 ### DQN Results
 
 Overall, the DQN Model did show that the model learned as it was trained on more scenarios and performed adequately. The DQN Model was able to have a winning record over the course of 100 episodes consistenly over all the simulations. Furthermore, the individual model score of the DQN Model did show an upward trend as more episodes passes, which could indicate that it was learning how to maximize the reward of the player, even without having full gamestate knowledge.
