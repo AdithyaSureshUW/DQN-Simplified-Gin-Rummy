@@ -43,7 +43,7 @@ In total, I ran the each simulation 10 times, and I have shown a sample plot for
 
 | DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- |
-| img  | img  | img | %  | 
+| img  | img  | img | 55%  | 
 
 ### Simulation 2 Evaluation
 
