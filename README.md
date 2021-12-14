@@ -1,11 +1,27 @@
 # DQN-Simplified-Gin-Rummy
 
+## Project Description
+
+### Background of Deep Q-Learning
+
+### Abstract
+
+Deep Q-Learning has been used to solve games such as Atari games, Go, Chess, etc., however, this project strives to understand if Deep Q-Learning would be able to apply equally well to environemnts that do not provide all the gamestate information to a player. Specifically looking at Gin Rummy, a player is unable to know their opponents hand and the order of the deck, making finding optimal plays more random compared to the games mentioned above. To understand how effective different implementations of Deep Q-Learning would be on environments that do not provide players with full knowledge of the gamestate, this project will run multiple implementations of Deep Q-Learning on a simplified Gin Rummy environment, which contains a significant amount of missing knowledge, and then evaluate how well each model performs compared to a random move agent.
+
+### Problem Statement
+
+The problem this project aims to solve to is to understand if a Deep Q-Learning model can be trained to play a simplified version of Gin Rummy, where players are not provided full gamestate information. 
+
 ## Methodology
 
 ### Definitions
 
 - Model Score: Reward of the Model
 - Model Reward: (Model Score - Random Move Score)
+
+### Initial Approach
+
+### Final Approach
 
 ## Evaluation
 
@@ -14,7 +30,7 @@ To evalute how well a model performed, I used simulations to understand how well
 - Simulation 1: DQN Model vs Random Move 
 - Simulation 2: DDQN Model vs Random Move
 
-Due to the high amound of randomness that is inherent within the Gin Rummy Environment, I based my evalutaions on:
+Due to the high amound of randomness that is inherent within the Gin Rummy Environment, I evalutaioned based on:
 
 1. Model Reward Plot
 2. Model Score Plot and Trend Line
