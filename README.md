@@ -37,21 +37,19 @@ Due to the high amound of randomness that is inherent within the Gin Rummy Envir
 3. Model Loss Plot
 4. Percentage of Games Won by Model
 
-In total, I ran the each simulation 10 times, and I have shown the plots for two runs of each simulation.
+In total, I ran the each simulation 10 times, and I have shown a sample plot for each simulation.
 
 ### Simulation 1 Evaluation
 
-| DQN Model | DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
-| --- | --- | --- | --- | --- |
-| Sample Run 1 | img  | img  | img | %  | 
-| Sample Run 2  | img | img  | img | %  | 
+| DQN Model Reward Plot | DQN Model Score Plot | DQN Model Loss Plot | Percentage of Games Won |
+| --- | --- | --- | --- |
+| img  | img  | img | %  | 
 
 ### Simulation 2 Evaluation
 
-| DDQN Model | DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
-| --- | --- | --- | --- | --- |
-| Sample Run 1 | img  | img  | img | %  | 
-| Sample Run 2  | img | img  | img | %  | 
+| DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
+| --- | --- | --- | --- |
+| img  | img  | img | %  | 
 
 ## Results
 
@@ -61,7 +59,11 @@ Two key observations I found through the simulations were that:
 
 ### DQN Results
 
+Overall, the DQN Model did show that the model learned as it was trained on more scenarios and performed adequately. The DQN Model was able to have a winning record over the course of 100 episodes consistenly over all the simulations. Furthermore, the individual model score of the DQN Model did show an upward trend as more episodes passes, which could indicate that it was learning how to maximize the reward of the player, even without having full gamestate knowledge.
+
 ### DDQN Results
+
+The DDQN Model similarly showed some trend in learning how to maximize the record of the player and winning record.
 
 ### Understanding Results
 
