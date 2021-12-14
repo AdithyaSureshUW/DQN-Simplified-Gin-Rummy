@@ -17,7 +17,7 @@ The problem this project aims to solve to is to understand if a Deep Q-Learning 
 ### Definitions
 
 - Model Score: Reward of the Model
-- Model Reward: (Model Score - Random Move Score)
+- Model Net Reward: (Model Score - Random Move Agent Score)
 
 ### Initial Approachs
 
