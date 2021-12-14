@@ -49,7 +49,7 @@ In total, I ran the each simulation 10 times, and I have shown a sample plot for
 
 | DDQN Model Reward Plot | DDQN Model Score Plot | DDQN Model Loss Plot | Percentage of Games Won |
 | --- | --- | --- | --- |
-| img  | img  | img | %  | 
+| img  | img  | img | 53%  | 
 
 ## Results
 
