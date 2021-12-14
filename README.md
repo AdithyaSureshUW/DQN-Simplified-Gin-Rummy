@@ -76,17 +76,17 @@ In total, I ran the each simulation 15 times, and I have shown a sample plot for
 
 ### DQN Model Results
 
-The DQN Model results are hard to quantify as the learning done by the model was not seen in the evaluation, but the DQN Model did have winning record over the course of 100 episodes consistenly over the majority the simulations. Furthermore, the individual model score of the DQN Model sometimes showed an upward trend as more episodes passes, but also sometimes showed a downward trend. This makes it hard to infer if the model was really learning as intended. The DQN Model did consistently have very high winning percentages over the Random Move agent, but the lack of consistency of the model makes it hard to answer the problem with.
+The DQN Model results are hard to quantify as the learning done by the model was not seen in the evaluation, but the DQN Model did have winning record over the course of 100 episodes consistenly over the majority the simulations. Furthermore, the individual model score of the DQN Model sometimes showed an upward trend as more episodes passes, but also sometimes showed a downward trend. This makes it hard to infer if the model was really learning as intended. The DQN Model did consistently have very high winning percentages over the Random Move agent, but the lack of consistency of the model makes it hard to answer the problem statement.
 
 ### DDQN Model Results
 
-Unlike the DQN Model, the DDQN Model showed both a trend in learning how to maximize the reward of the player and held a winning record in the majority of simulations. Commpared to the DQN Model, the DDQN tends to be more stable in the rewards it provides leading to lower win percentages peaks compared to the DQN Model. However, this stability allows the DDQN Model to learn in a conistent manner as seen through the Model Score trend line which showed a positive, upward trend that can be inferred to represent the optimization of the DDQN Model.
+Unlike the DQN Model, the DDQN Model showed both a trend in learning how to maximize the reward of the player and held a winning record in the majority of simulations. Commpared to the DQN Model, the DDQN tends to be more stable in the rewards it provides leading to lower win percentages peaks compared to the DQN Model. However, this stability allows the DDQN Model to learn in a conistent manner as seen through the Model Score trend line which showed a positive, upward trend. This consistent positive, upward trending can be inferred to represent that the DDQN Model is learning and becoming more optimized.
 
 ### Result Summary
 
-After revewing the evaluation data, I believe that looking at the Model Score Trend Line was is the best evaluation metric to use to verify how well a model is training because a Model's Net Reward and Win Percentage are are influenced by the Random Move agent. Thus, I believe that as a DQN model would not work consistently for the simplified Gin Rummy environment, while the DDQN model shows that it could produce consistently better results given more training time.
+After revewing the evaluation data, I believe that looking at the Model Score Trend Line was is the best evaluation metric to use to verify how well a model is training because a Model's Net Reward and Win Percentage are are influenced by the Random Move agent. Overall , I believe that as a DQN model would not work consistently for the simplified Gin Rummy environment, while the DDQN model would produce consistently better results given more training time.
 
-Thus, I do believe that Deep Q-Learning can be applied to environments, such as the simplified Gin Rummy environment, where players do not have knowledge of the entire gamestate.
+Thus, I do believe that some forms of Deep Q-Learning can be applied to environments where players do not possess knowledge of the entire gamestate.
 
 ## Future Improvements
 
