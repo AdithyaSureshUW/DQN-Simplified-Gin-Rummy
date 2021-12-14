@@ -86,7 +86,7 @@ Unlike the DQN Model, the DDQN Model showed both a trend in learning how to maxi
 
 After revewing the evaluation data, I believe that looking at the Model Score Trend Line was is the best evaluation metric to use to verify how well a model is training because a Model's Net Reward and Win Percentage are are influenced by the Random Move agent. Overall , I believe that as a DQN model would not work consistently for the simplified Gin Rummy environment, while the DDQN model would produce consistently better results given more training time.
 
-Thus, I do believe that some forms of Deep Q-Learning can be applied to environments where players do not possess knowledge of the entire gamestate.
+Thus, the results show that some forms of Deep Q-Learning are able to be applied to environments where players do not possess knowledge of the entire gamestate.
 
 ## Future Improvements
 
