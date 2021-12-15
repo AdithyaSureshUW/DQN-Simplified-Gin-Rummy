@@ -44,7 +44,7 @@ To simplify the game of Gin Rummy, I decided to make the game a best of 1 and ha
 
 ### Model Approach
 
-For the Deep Learning model, I used a Sequential model contained multiple Dense layers, each activated by the ReLU activation function. Initially, I used a two Dense layers in my DQN Model. Then, looking at the training results with multiple hyperparamters, it seemed that a single layer would not be able to best find the features needed. Thus, I continued tested until I ended up using a total of 4 Dense layers within my Seqential Model for DQN. After performing a manual hyperparameter search for the DQN Model, I found hyperparameters that would let the DQN Model consistently have a winning record against a random move ageent. Importantly, when making the DQN and following DDQN Models, I used a separate target network to set the targets for Gradient Descent for more stability in the results, and updated that separate target network every 5 episodes. 
+For the Deep Learning model, I used a Sequential model contained multiple Dense layers, each activated by the ReLU activation function. Initially, I used a two Dense layers in my DQN Model. Then, looking at the training results with multiple hyperparamters, it seemed that a single layer would not be able to best find the features needed. Thus, I continued tested until I ended up using a total of 4 Dense layers within my Seqential Model for DQN. After performing a manual hyperparameter search for the DQN Model, I found hyperparameters that would let the DQN Model consistently have a winning record against a random move ageent. Importantly, when making the DQN and following DDQN Models, I used a separate target network to set the targets for Gradient Descent for more stability in the results, and updated that separate target network every 5 episodes. Another critical aspect in both the DQN and DDQN Models is the LAMBDA, or the Epsilon decay factor, which balances Model move exploration vs acting in a greedy manner. For a model to perform well it needs to explore many different states and then act in a greedy manner which is why I chose a very small LAMBDA. However this means that likely most actions will be random with the majority of greedy actions occcuring later.
 
 #### DQN vs DDQN Approach
 
@@ -64,7 +64,7 @@ Due to the high amound of randomness that is inherent within the Gin Rummy Envir
 3. Model Loss Plot
 4. Percentage of Games Won by Model
 
-In total, I ran the each simulation 15 times, and I have shown a sample plot for each simulation.
+In total, I ran the each simulation 15 times, and I have shown a sample plots for each simulation.
 
 ### DQN Simulation Evaluation
 
@@ -94,14 +94,18 @@ Unlike the DQN Model, the DDQN Model showed both a trend in learning how to maxi
 
 ### Result Summary
 
-After revewing the evaluation data, I believe that looking at the Model Score Trend Line was is the best evaluation metric to use to verify how well a model is training because a Model's Net Reward and Win Percentage are are influenced by the Random Move agent. Overall , I believe that as a DQN model would not work consistently for the simplified Gin Rummy environment, while the DDQN model would produce consistently better results given more training time.
+After revewing the evaluation data, I believe that looking at the Model Score Trend Line was is the best evaluation metric to use to verify how well a model is training because a Model's Net Reward and Win Percentage are are influenced by the Random Move agent. Even though many actions during the training process are done for exporation, due to the large LAMBDA, looking at the trend line still shows how well the DQN / DDQN Model itself is training. Overall , I believe that as a DQN model would not work consistently for the simplified Gin Rummy environment, while the DDQN model would produce consistently better results given more training time.
+
+It is important to note that the majority of actions being done by both models are likely random, so even small improvements appearing over a 100 episodes show that the model is learning on how to better play the game in an optimal manner. The consistent score improvments alongside a solid win percentage does incdicate a positive result for the DDQN model's training results.
 
 Thus, the results show that some forms of Deep Q-Learning are able to be applied to environments where players do not possess knowledge of the entire gamestate.
 
-## Future Improvements
+## Future Possibilities
 
 ### Environment Improvements
 
+The main update to the environment would be to only finish the environment when the game truly ends, rather than a set number of moves. While this would cause the model to take much more time to train, it would allow the model to be able to better understand how to act in different scenarios and likely lead to better results. Also, more features could be added to the simplified Gin Rummy environment, such as being able to Knock, to make the game more complex. Then, one could see if DQN models could still perform on more complex environments where players do not have full gamestate knowledge.
+
 ### Model Improvements
 
-
+Currently, the LAMBDA value of the agent being very small makes it so that likely the majority of the actions are being done randomly, as Epsilon decreases slowly, with some being done by the agent itself. This made it so that the agent explored many different possible states for a while, and only near the end of training did the model start acting in a more greedy manner. However, due to the limitations on the number of episodes that could be run as well as how long the training process took, I could not feasibly increase the LAMBDA or increase the number of episodes to a point where the model would be able to explore many possibilities while also acting in a greedy manner. Thus, training the agent for a much longer period and making it continously act in a more greedy manner could product much better and consistent results.
