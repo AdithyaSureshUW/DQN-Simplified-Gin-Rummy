@@ -4,6 +4,8 @@
 
 ### Background of Deep Q-Learning
 
+Deep Q-Learning is a type of Reinforcement Learning that utilizes 
+
 ### Abstract
 
 Deep Q-Learning has been used to solve games such as Atari games, Go, Chess, etc., however, this project strives to understand if Deep Q-Learning would be able to apply equally well to environemnts that do not provide all the gamestate information to a player. Specifically looking at Gin Rummy, a player is unable to know their opponents hand and the order of the deck, making finding optimal plays more random compared to the games mentioned above. To understand how effective different implementations of Deep Q-Learning would be on environments that do not provide players with full knowledge of the gamestate, this project will run multiple implementations of Deep Q-Learning on a simplified Gin Rummy environment, which contains a significant amount of missing knowledge, and then evaluate how well each model performs compared to a random move agent.
@@ -42,7 +44,7 @@ To simplify the game of Gin Rummy, I decided to make the game a best of 1 and ha
 
 ### Model Approach
 
-For the Deep Learning model, I used a Sequential model contained multiple Dense layers, each activated by the ReLU activation function. Initially, I used a two Dense layers in my DQN Model. Then, looking at the training results with multiple hyperparamters, it seemed that a single layer would not be able to best find the features needed. Thus, I continued tested until I ended up using a total of 4 Dense layers within my Seqential Model for DQN. After performing a manual hyperparameter search for the DQN Model, I found hyperparameters that would let the DQN Model consistently have a winning record against a random move ageent.
+For the Deep Learning model, I used a Sequential model contained multiple Dense layers, each activated by the ReLU activation function. Initially, I used a two Dense layers in my DQN Model. Then, looking at the training results with multiple hyperparamters, it seemed that a single layer would not be able to best find the features needed. Thus, I continued tested until I ended up using a total of 4 Dense layers within my Seqential Model for DQN. After performing a manual hyperparameter search for the DQN Model, I found hyperparameters that would let the DQN Model consistently have a winning record against a random move ageent. Importantly, when making the DQN and following DDQN Models, I used a separate target network to set the targets for Gradient Descent for more stability in the results, and updated that separate target network every 5 episodes. 
 
 #### DQN vs DDQN Approach
 
