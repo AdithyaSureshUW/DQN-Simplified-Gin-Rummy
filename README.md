@@ -1,5 +1,15 @@
 # DQN-Simplified-Gin-Rummy
 
+## Video Presentation
+
+https://youtu.be/0tu65F5pbkU
+
+## Demo
+
+Colab Notebook for DQN: https://github.com/AdithyaSureshUW/DQN-Simplified-Gin-Rummy/blob/main/DQN_Gin_Rummy.ipynb
+
+Colab Notebook for Double DQN: https://github.com/AdithyaSureshUW/DQN-Simplified-Gin-Rummy/blob/main/DDQN_Gin_Rummy.ipynb
+
 ## Project Description
 
 ### Abstract
