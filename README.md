@@ -4,15 +4,13 @@
 
 https://youtu.be/0tu65F5pbkU
 
-## Demo
+## Demo: Download Runnable Notebooks
 
-Both Notebooks also stored in Github repo.
-
-Colab Notebook for DQN: 
+Notebook for DQN: 
 
 https://drive.google.com/file/d/1YyLvpAJkLbSuoARR3tJFmKPH8O5hEOjq/view?usp=sharing
 
-Colab Notebook for Double DQN: 
+Notebook for Double DQN: 
 
 https://drive.google.com/file/d/1IHzY8IWK-sCKDWR3U3hPuNkR8b9rNzQg/view?usp=sharing
 
