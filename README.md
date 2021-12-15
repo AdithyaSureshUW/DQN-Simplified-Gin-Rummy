@@ -41,8 +41,8 @@ To simplify the game of Gin Rummy, I decided to make the game a best of 1 and ha
 
 ### Definitions
 
-- Model Score: Reward of the Model
-- Model Net Reward: (Model Score - Random Move Agent Score)
+- Model Score: Reward of the Model Agent
+- Model Net Reward: (Model Agent Score - Random Move Agent Score)
 
 ### Model Approach
 
@@ -90,15 +90,15 @@ In total, I ran each simulation 15 times, and I have shown sample plots for each
 
 ### DQN Model Results
 
-The DQN Model results are hard to quantify as the learning done by the model was not seen in the evaluation. However, the DQN Model did have a winning record over the course of 100 episodes consistently over most of the simulations. Furthermore, the individual model score of the DQN Model sometimes showed an upward trend as more episodes passed but sometimes showed a downward trend. This makes it hard to infer if the model was really learning as intended. The DQN Model consistently had very high winning percentages over the Random Move agent. However, the lack of consistency of the model makes it hard to answer the problem statement.
+The DQN Agent results are hard to quantify as the learning done by the model was not seen in the evaluation. However, the DQN Agent did have a winning record over the course of 100 episodes consistently over most of the simulations. Furthermore, the individual model score of the DQN Agent sometimes showed an upward trend as more episodes passed but sometimes showed a downward trend. This makes it hard to infer if the model was really learning as intended. The DQN Agent consistently had very high winning percentages over the Random Move agent. However, the lack of consistency of the model makes it hard to answer the problem statement.
 
 ### DDQN Model Results
 
-Unlike the DQN Model, the DDQN Model showed both a trend in learning how to maximize the player's reward and held a winning record in the majority of simulations. The DDQN tends to be more stable in its rewards, leading to lower win percentages peaks than the DQN Model. However, this stability allows the DDQN Model to learn consistently, seen through the Model Score trend line, which showed a positive, upward trend. This consistent positive, upward-trending of the Model Score can be inferred to represent that the DDQN Model is learning and becoming more optimized.
+Unlike the DQN Agent, the DDQN Agent showed both a trend in learning how to maximize the player's reward and held a winning record in the majority of simulations. The DDQN Agent tends to be more stable in its rewards, leading to lower win percentages peaks than the DQN Agent. However, this stability allows the DDQN Agent to learn consistently, seen through the Model Score trend line, which showed a positive, upward trend. This consistent positive, upward-trending of the Model Score can be inferred to represent that the DDQN Model is learning and becoming more optimized.
 
 ### Result Summary
 
-After reviewing the evaluation data, I believe that looking at the Model Score Trend Line is the best evaluation metric to verify how well a model is training because a Model's Net Reward and Win Percentage are influenced by the Random Move agent. Even though many actions during the training process are done for exploration, due to the large Lambda, looking at the trend line still shows how well the DQN / DDQN Model itself is training. Overall, I believe that a DQN model would not work consistently for the simplified Gin Rummy environment. In contrast, I believe that the DDQN model would produce consistently better results given more training time.
+After reviewing the evaluation data, I believe that looking at the Model Score Trend Line is the best evaluation metric to verify how well a model is training because a Model's Net Reward and Win Percentage are influenced by the Random Move agent. Even though many actions during the training process are done for exploration, due to the large Lambda, looking at the trend line still shows how well the DQN / DDQN Model itself is training. Overall, I believe that a DQN Model would not work consistently for the simplified Gin Rummy environment. In contrast, I believe that the DDQN Model would produce consistently better results given more training time.
 
 It is important to note that most of the actions done by both models are likely random, so even minor improvements appearing over 100 episodes show that the model is learning how to play the game more optimally. The consistent score improvements alongside a solid win percentage indicate a positive result for the DDQN model's training results.
 
