@@ -31,14 +31,22 @@ The first major change I made to the pre-existing work was creating the entire s
 
 ## Methodology
 
+### Simplified Gin Rummy
+
+To simplify the game of Gin Rummy, I decided to make the game a best of 1 and have it so a player can only win by obtaining Gin. This would mean a player would need 3 melds (sets or runs) and 1 meld having 4 cards within it to win. Furthermore, I scaled the reward of a state exponentially when more melds are contained within a hand as it increases the likelihood of winning by a lot. Then, I also put a siginficant emphasis on having a meld of 4 cards because from personal experience playing Gin Rummy, it is crucial to obtain a meld of 4. Finally, I made sure the reward of winning would definitely surpass the reward of any hand so a trained agent should try any possible path to a victory state. Importantly, to train the model in a reasonable amount of time, I limited the number of game moves to 100, or 50 moves per player. In the case where the max number of moves has been played, the player with the highest score wins.
+
 ### Definitions
 
 - Model Score: Reward of the Model
 - Model Net Reward: (Model Score - Random Move Agent Score)
 
-### Initial Approachs
+### Model Approach
 
-### Finalized Approach
+For the Deep Learning model, I used a Sequential model contained multiple Dense layers, each activated by the ReLU activation function. Initially, I used a two Dense layers in my DQN Model. Then, looking at the training results with multiple hyperparamters, it seemed that a single layer would not be able to best find the features needed. Thus, I continued tested until I ended up using a total of 4 Dense layers within my Seqential Model for DQN. After performing a manual hyperparameter search for the DQN Model, I found hyperparameters that would let the DQN Model consistently have a winning record against a random move ageent.
+
+#### DQN vs DDQN Approach
+
+Since, the DQN Model was performing well when looking at win percentage, but not showing consistent improvements in Model Score or Net Reward, I decided to implement a DDQN Model to verify if Deep Q-Learning can be applied to environments similar to the simplified Gin Rummy environment. To do a fair comparison, the only code I changed between the two models is the replay function where I changed how to calculate the Q function value.
 
 ## Evaluation
 
