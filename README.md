@@ -52,7 +52,7 @@ Importantly, when making the DQN and DDQN Models, I created a separate target ne
 
 #### DQN vs. DDQN Approach
 
-Since the DQN Model was performing well when looking at win percentage but not showing consistent improvements in Model Score or Net Reward, I decided to implement a DDQN Model to verify if Deep Q-Learning can be applied to environments similar to the simplified Gin Rummy environment. To make a fair comparison, the only code I changed between the two models is the replay function, where I changed how to calculate the target Q values.
+Since the DQN Model was performing well when looking at win percentage but not showing consistent improvements in Model Score or Net Reward, I decided to implement a DDQN Model to verify if Deep Q-Learning can be applied to environments similar to the simplified Gin Rummy environment. For a fair comparison, the only code I changed between the two models is the replay function, where I changed how to calculate the Q values.
 
 ## Evaluation
 
