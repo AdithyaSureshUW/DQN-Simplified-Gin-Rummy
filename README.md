@@ -2,17 +2,18 @@
 
 ## Project Description
 
-### Background of Deep Q-Learning
-
-Deep Q-Learning is a type of Reinforcement Learning that utilizes 
-
 ### Abstract
 
 Deep Q-Learning has been used to solve games such as Atari games, Go, Chess, etc.; however, this project strives to understand if Deep Q-Learning would be able to apply equally well to environments that do not provide all the game state information to a player. Specifically looking at Gin Rummy, a player is unable to know their opponent's hand and the order of the deck, making finding optimal plays more random compared to the games mentioned above. To understand how effective different implementations of Deep Q-Learning would be on environments that do not provide players with full knowledge of the game state, this project will run multiple implementations of Deep Q-Learning on a simplified Gin Rummy environment, which contains a significant amount of missing knowledge, and then evaluate how well each model performs compared to a random move agent.
 
 ### Problem Statement
 
-This project aims to understand if a Deep Q-Learning model can be trained to play a simplified version of Gin Rummy, where players are not provided complete game state information. 
+This project aims to understand if a Deep Q-Learning model can be trained to play a simplified version of Gin Rummy, where players are not provided complete game state information.
+
+### Definitions
+
+- DQN: Deep Q-Network
+- DDQN: Double Deep Q-Network
 
 ## Related Work
 
