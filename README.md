@@ -6,10 +6,14 @@ https://youtu.be/0tu65F5pbkU
 
 ## Demo
 
+Both Notebooks Also Stored in Github repo.
+
 Colab Notebook for DQN: 
+
 https://drive.google.com/file/d/1YyLvpAJkLbSuoARR3tJFmKPH8O5hEOjq/view?usp=sharing
 
 Colab Notebook for Double DQN: 
+
 https://drive.google.com/file/d/1IHzY8IWK-sCKDWR3U3hPuNkR8b9rNzQg/view?usp=sharing
 
 ## Project Description
