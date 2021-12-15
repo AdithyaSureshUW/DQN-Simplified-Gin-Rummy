@@ -6,7 +6,7 @@ https://youtu.be/0tu65F5pbkU
 
 ## Demo
 
-Both Notebooks Also Stored in Github repo.
+Both Notebooks also stored in Github repo.
 
 Colab Notebook for DQN: 
 
