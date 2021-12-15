@@ -6,9 +6,9 @@ https://youtu.be/0tu65F5pbkU
 
 ## Demo
 
-Colab Notebook for DQN: https://drive.google.com/file/d/162p0LU5T9Sz3OEkaAmYU1FXHU3CgOHmN/view?usp=sharing
+Colab Notebook for DQN: https://drive.google.com/file/d/1YyLvpAJkLbSuoARR3tJFmKPH8O5hEOjq/view?usp=sharing
 
-Colab Notebook for Double DQN: https://drive.google.com/file/d/1gKaQ33JlxWBG6RlGjVtU_kFKtM2zCKv4/view?usp=sharing
+Colab Notebook for Double DQN: https://drive.google.com/file/d/1IHzY8IWK-sCKDWR3U3hPuNkR8b9rNzQg/view?usp=sharing
 
 ## Project Description
 
